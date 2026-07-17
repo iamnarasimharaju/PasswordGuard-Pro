@@ -1,0 +1,156 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg-primary);
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  background: var(--bg-sidebar);
+  color: var(--text-primary);
+  padding: 30px 22px;
+  border-right: 1px solid var(--border-color);
+}
+
+.sidebar-logo {
+  margin-bottom: 50px;
+}
+
+.sidebar-logo h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+.sidebar-logo span {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 14px 18px;
+
+  border-radius: var(--radius);
+
+  cursor: pointer;
+
+  transition: var(--transition);
+
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.menu-item:hover {
+  background: var(--bg-card);
+  transform: translateX(5px);
+}
+
+.menu-item.active {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+}
+
+.main-content {
+  flex: 1;
+  padding: 35px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Inter", sans-serif;
+}
+
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  height: 80px;
+  background: var(--bg-sidebar);
+
+  border-bottom: 1px solid var(--border-color);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 35px;
+}
+
+.navbar-left h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.navbar-left p {
+  font-family: "Inter", sans-serif;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.security-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: rgba(34, 197, 94, .15);
+
+  color: var(--success);
+
+  padding: 10px 16px;
+
+  border-radius: 30px;
+
+  font-family: "Inter", sans-serif;
+}
+
+.icon-button {
+  width: 42px;
+  height: 42px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: var(--bg-card);
+
+  color: var(--text-primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: var(--transition);
+}
+
+.icon-button:hover {
+  background: var(--primary);
+}
+
+.profile {
+  cursor: pointer;
+}

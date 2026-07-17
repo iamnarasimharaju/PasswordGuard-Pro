@@ -1,0 +1,30 @@
+:root {
+  /* Colors */
+  --bg-primary: #0b1220;
+  --bg-sidebar: #111827;
+  --bg-card: #1e293b;
+
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+
+  --border-color: #334155;
+
+  /* Sidebar */
+  --sidebar-width: 280px;
+
+  /* Radius */
+  --radius: 12px;
+
+  /* Shadow */
+  --shadow: 0 8px 20px rgba(0,0,0,.25);
+
+  /* Transition */
+  --transition: all .3s ease;
+}

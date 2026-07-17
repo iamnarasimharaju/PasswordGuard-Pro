@@ -1,0 +1,204 @@
+/* =========================================================
+   PASSWORD INPUT
+========================================================= */
+
+.password-section{
+    max-width:900px;
+    margin-top:30px;
+}
+
+.password-label{
+    display:block;
+    font-size:15px;
+    color:var(--text-secondary);
+    margin-bottom:12px;
+    font-weight:500;
+}
+
+.password-wrapper{
+    display:flex;
+    align-items:center;
+    background:#1b2435;
+    border:1px solid #2d3a52;
+    border-radius:16px;
+    padding:8px 10px;
+    transition:.25s;
+}
+
+.password-wrapper:focus-within{
+    border-color:#3b82f6;
+    box-shadow:0 0 0 4px rgba(59,130,246,.15);
+}
+
+.password-input{
+    flex:1;
+    background:transparent;
+    border:none;
+    outline:none;
+    color:white;
+    font-size:17px;
+    font-family:"JetBrains Mono", monospace;
+    padding:12px;
+}
+
+.password-input::placeholder{
+    color:#7b879d;
+}
+
+.password-icons{
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+
+.password-icons button{
+    width:40px;
+    height:40px;
+    border:none;
+    background:transparent;
+    border-radius:10px;
+    color:#9ca3af;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.password-icons button:hover{
+    background:#293548;
+    color:white;
+}
+
+
+/* =========================================================
+   STRENGTH METER
+========================================================= */
+
+.strength-container{
+    max-width:900px;
+    margin-top:28px;
+    margin-bottom:35px;
+}
+
+.strength-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:12px;
+}
+
+.strength-header span{
+    font-size:15px;
+    font-weight:600;
+    color:var(--text-primary);
+}
+
+.strength-score{
+    color:#3b82f6;
+}
+
+.strength-track{
+    width:100%;
+    height:12px;
+    background:#1f2937;
+    border-radius:999px;
+    overflow:hidden;
+}
+
+.strength-progress{
+    height:100%;
+    border-radius:999px;
+    transition:width .35s ease;
+}
+
+.strength-footer{
+    margin-top:10px;
+    color:var(--text-secondary);
+    font-size:14px;
+}
+
+
+/* =========================================================
+   PASSWORD BREAKDOWN
+========================================================= */
+
+.breakdown-card{
+    margin-top:35px;
+    background:var(--bg-card);
+    border:1px solid var(--border-color);
+    border-radius:18px;
+    padding:28px;
+}
+
+.breakdown-card h3{
+    margin-bottom:20px;
+}
+
+.breakdown-list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.breakdown-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:14px;
+    border-radius:10px;
+    background:rgba(255,255,255,.03);
+}
+
+.breakdown-item span{
+    font-size:15px;
+}
+
+
+/* =========================================================
+   SECURITY RECOMMENDATIONS
+========================================================= */
+
+.suggestion-card{
+    margin-top:35px;
+    background:var(--bg-card);
+    border:1px solid var(--border-color);
+    border-radius:18px;
+    padding:28px;
+}
+
+.suggestion-card h3{
+    margin-bottom:20px;
+}
+
+.suggestion-list{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.suggestion-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:14px;
+    border-radius:10px;
+    background:rgba(255,255,255,.03);
+}
+
+/* =======================
+   ATTACK SIMULATION
+========================== */
+
+.attack-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px;
+    border-radius:10px;
+    background:rgba(255,255,255,.03);
+    margin-bottom:12px;
+}
+
+.attack-left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
