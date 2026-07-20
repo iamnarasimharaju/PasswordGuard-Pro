@@ -3,7 +3,10 @@ import {
   XCircle,
 } from "lucide-react";
 
+import SectionCard from "../common/SectionCard";
+
 function PasswordBreakdown({ result, password }) {
+
   if (!password) return null;
 
   const checks = [
@@ -42,17 +45,17 @@ function PasswordBreakdown({ result, password }) {
   ];
 
   return (
-    <div className="breakdown-card">
-
-      <h3>Password Breakdown</h3>
+    <SectionCard title="Password Breakdown">
 
       <div className="breakdown-list">
 
         {checks.map((item) => (
+
           <div
             key={item.label}
             className="breakdown-item"
           >
+
             {item.passed ? (
               <CheckCircle2
                 size={20}
@@ -68,11 +71,12 @@ function PasswordBreakdown({ result, password }) {
             <span>{item.label}</span>
 
           </div>
+
         ))}
 
       </div>
 
-    </div>
+    </SectionCard>
   );
 }
 

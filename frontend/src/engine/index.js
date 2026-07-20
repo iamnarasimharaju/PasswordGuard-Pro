@@ -4,33 +4,43 @@ import { calculateEntropy } from "./entropyEngine";
 import { estimateCrackTime } from "./crackTimeEngine";
 import { generateSuggestions } from "./suggestionEngine";
 import { simulateAttacks } from "./attackSimulationEngine";
+import { checkCompliance } from "./complianceEngine";
 
 export function analyzePassword(password) {
-  const score = calculatePasswordScore(password);
 
-  const patterns = analyzePatterns(password);
+    const score = calculatePasswordScore(password);
 
-  const entropy = calculateEntropy(password);
+    const patterns = analyzePatterns(password);
 
-  const crackTime = estimateCrackTime(entropy.entropy);
+    const entropy = calculateEntropy(password);
 
-  const suggestions = generateSuggestions(
-    password,
-    score.score,
-    patterns
-  );
+    const crackTime = estimateCrackTime(entropy.entropy);
 
-  const attackSimulation = simulateAttacks(
-    password,
-    crackTime
-  );
+    const suggestions = generateSuggestions(
+        password,
+        score.score,
+        patterns
+    );
 
-  return {
-    score,
-    patterns,
-    entropy,
-    crackTime,
-    suggestions,
-    attackSimulation,
-  };
+    const attackSimulation = simulateAttacks(
+        password,
+        crackTime
+    );
+
+    const compliance = checkCompliance(
+        password,
+        score,
+        entropy,
+        patterns
+    );
+
+    return {
+        score,
+        patterns,
+        entropy,
+        crackTime,
+        suggestions,
+        attackSimulation,
+        compliance,
+    };
 }

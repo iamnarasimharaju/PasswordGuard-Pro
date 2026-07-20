@@ -1,4 +1,66 @@
 /* =========================================================
+   ANALYZER HEADER
+========================================================= */
+
+.analyzer-header{
+
+    margin-bottom:40px;
+
+}
+
+.header-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:#1b2435;
+
+    border:1px solid #2d3a52;
+
+    color:#3b82f6;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.analyzer-header h1{
+
+    font-size:40px;
+
+    font-weight:700;
+
+    color:white;
+
+    margin-bottom:16px;
+
+}
+
+.analyzer-header p{
+
+    max-width:760px;
+
+    color:#94a3b8;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+
+
+
+/* =========================================================
    PASSWORD INPUT
 ========================================================= */
 
@@ -201,4 +263,23 @@
     display:flex;
     align-items:center;
     gap:10px;
+}
+
+/* =======================
+   COMPLIANCE
+========================== */
+
+.compliance-item{
+    display:flex;
+    align-items:center;
+    padding:14px;
+    border-radius:10px;
+    background:rgba(255,255,255,.03);
+    margin-bottom:12px;
+}
+
+.compliance-left{
+    display:flex;
+    align-items:center;
+    gap:12px;
 }

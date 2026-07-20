@@ -1,10 +1,12 @@
 import { useMemo, useState } from "react";
+import { ShieldCheck } from "lucide-react";
 
 import PasswordInput from "../components/analyzer/PasswordInput";
 import StrengthMeter from "../components/analyzer/StrengthMeter";
 import PasswordBreakdown from "../components/analyzer/PasswordBreakdown";
 import SuggestionList from "../components/analyzer/SuggestionList";
 import AttackSimulation from "../components/analyzer/AttackSimulation";
+import ComplianceCard from "../components/analyzer/ComplianceCard";
 
 import MetricCard from "../components/common/MetricCard";
 import SectionGrid from "../components/common/SectionGrid";
@@ -19,17 +21,40 @@ function PasswordAnalyzer() {
   return (
     <div className="password-analyzer-page">
 
-      <h2>Enterprise Password Security Analyzer</h2>
+      {/* ---------- HEADER ---------- */}
+
+      <div className="analyzer-header">
+
+        <div className="header-badge">
+          <ShieldCheck size={18} />
+          PasswordGuard Pro
+        </div>
+
+        <h1>Enterprise Password Security Analyzer</h1>
+
+        <p>
+          Analyze password strength using entropy calculation,
+          attack simulation, compliance validation, crack-time
+          estimation and industry-standard security scoring.
+        </p>
+
+      </div>
+
+      {/* ---------- INPUT ---------- */}
 
       <PasswordInput
         password={password}
         setPassword={setPassword}
       />
 
+      {/* ---------- STRENGTH ---------- */}
+
       <StrengthMeter
         score={result.custom.score.score}
         strength={result.custom.score.strength}
       />
+
+      {/* ---------- METRICS ---------- */}
 
       <div className="metrics-grid">
 
@@ -59,6 +84,8 @@ function PasswordAnalyzer() {
 
       </div>
 
+      {/* ---------- SECTION GRID ---------- */}
+
       <SectionGrid>
 
         <PasswordBreakdown
@@ -73,6 +100,11 @@ function PasswordAnalyzer() {
 
         <SuggestionList
           suggestions={result.custom.suggestions}
+          password={password}
+        />
+
+        <ComplianceCard
+          compliance={result.custom.compliance}
           password={password}
         />
 
