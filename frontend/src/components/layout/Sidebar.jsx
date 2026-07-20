@@ -7,49 +7,92 @@ import {
   Settings,
 } from "lucide-react";
 
-function Sidebar() {
+function Sidebar({ page, setPage }) {
+
+  const menu = [
+
+    {
+      id: "dashboard",
+      label: "Dashboard",
+      icon: LayoutDashboard,
+    },
+
+    {
+      id: "analyzer",
+      label: "Password Analyzer",
+      icon: ShieldCheck,
+    },
+
+    {
+      id: "generator",
+      label: "Password Generator",
+      icon: KeyRound,
+    },
+
+    {
+      id: "audit",
+      label: "Password Audit",
+      icon: FileSearch,
+    },
+
+    {
+      id: "reports",
+      label: "Reports",
+      icon: FileText,
+    },
+
+    {
+      id: "settings",
+      label: "Settings",
+      icon: Settings,
+    },
+
+  ];
+
   return (
+
     <aside className="sidebar">
+
       <div className="sidebar-logo">
+
         <h2>PasswordGuard</h2>
+
         <span>Enterprise Security</span>
+
       </div>
 
       <nav className="sidebar-menu">
 
-        <div className="menu-item active">
-          <LayoutDashboard size={20} />
-          <span>Dashboard</span>
-        </div>
+        {menu.map((item) => {
 
-        <div className="menu-item">
-          <ShieldCheck size={20} />
-          <span>Password Analyzer</span>
-        </div>
+          const Icon = item.icon;
 
-        <div className="menu-item">
-          <KeyRound size={20} />
-          <span>Password Generator</span>
-        </div>
+          return (
 
-        <div className="menu-item">
-          <FileSearch size={20} />
-          <span>Password Audit</span>
-        </div>
+            <div
+              key={item.id}
+              className={`menu-item ${
+                page === item.id ? "active" : ""
+              }`}
+              onClick={() => setPage(item.id)}
+            >
 
-        <div className="menu-item">
-          <FileText size={20} />
-          <span>Reports</span>
-        </div>
+              <Icon size={20} />
 
-        <div className="menu-item">
-          <Settings size={20} />
-          <span>Settings</span>
-        </div>
+              <span>{item.label}</span>
+
+            </div>
+
+          );
+
+        })}
 
       </nav>
+
     </aside>
+
   );
+
 }
 
 export default Sidebar;

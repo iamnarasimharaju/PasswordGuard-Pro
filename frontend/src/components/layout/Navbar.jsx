@@ -1,10 +1,10 @@
 import { Bell, Moon, ShieldCheck, UserCircle2 } from "lucide-react";
 
-function Navbar() {
+function Navbar({ title }) {
   return (
     <header className="navbar">
       <div className="navbar-left">
-        <h1>Dashboard</h1>
+        <h1>{title}</h1>
         <p>Enterprise Password Security Suite</p>
       </div>
 
