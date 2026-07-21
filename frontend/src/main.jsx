@@ -11,6 +11,7 @@ import "./styles/layout.css";
 import "./styles/components.css";
 import "./styles/analyzer.css";
 import "./styles/generator.css";
+import "./styles/reports.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

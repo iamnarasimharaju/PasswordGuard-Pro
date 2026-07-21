@@ -1,0 +1,40 @@
+.reports-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+.report-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:24px;
+
+}
+
+.report-section{
+
+    margin-top:20px;
+
+}
+/* ==========================================================
+   REPORT ACTIONS
+========================================================== */
+
+.report-actions{
+
+    display:flex;
+
+    gap:16px;
+
+    margin-top:24px;
+
+    flex-wrap:wrap;
+
+}
