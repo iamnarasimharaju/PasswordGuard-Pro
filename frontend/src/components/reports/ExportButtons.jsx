@@ -1,6 +1,8 @@
 import Button from "../common/Button";
 import { useDashboard } from "../../hooks/useDashboard";
+
 import { exportAuditToCSV } from "../../services/csvExportService";
+import { exportAuditToPDF } from "../../services/pdfExportService";
 
 function ExportButtons() {
 
@@ -11,7 +13,7 @@ function ExportButtons() {
   }
 
   function handlePDFExport() {
-    alert("PDF Export will be available in the next sprint.");
+    exportAuditToPDF(stats);
   }
 
   return (
