@@ -1,37 +1,77 @@
 import Card from "../components/common/Card";
+import RiskSummary from "../components/dashboard/RiskSummary";
+
+import { useDashboard } from "../hooks/useDashboard";
+import { getDashboardStatistics } from "../services/dashboardService";
+import RecentActivity from "../components/dashboard/RecentActivity";
 
 function Dashboard() {
+
+  const { stats } = useDashboard();
+
+  const dashboard =
+    getDashboardStatistics(stats.auditResults);
+
   return (
+
     <>
+
       <div className="stats-grid">
 
         <Card>
-          <h3>Security Score</h3>
-          <h1>94%</h1>
-          <p>Excellent</p>
+
+          <h3>Passwords Audited</h3>
+
+          <h1>{dashboard.totalPasswords}</h1>
+
+          <p>Total Audited</p>
+
         </Card>
 
         <Card>
-          <h3>Entropy</h3>
-          <h1>92 Bits</h1>
-          <p>Very Strong</p>
+
+          <h3>Average Score</h3>
+
+          <h1>{dashboard.averageScore}/100</h1>
+
+          <p>Security Score</p>
+
         </Card>
 
         <Card>
-          <h3>Crack Time</h3>
-          <h1>2M Years</h1>
-          <p>Offline Attack</p>
+
+          <h3>Average Entropy</h3>
+
+          <h1>{dashboard.averageEntropy} bits</h1>
+
+          <p>Password Strength</p>
+
         </Card>
 
         <Card>
-          <h3>Risk Level</h3>
-          <h1>Low</h1>
-          <p>No Breach Found</p>
+
+          <h3>Duplicates</h3>
+
+          <h1>{dashboard.duplicates}</h1>
+
+          <p>Password Reuse</p>
+
         </Card>
 
       </div>
+
+      <div className="section-grid">
+
+    <RiskSummary />
+
+    <RecentActivity />
+
+</div>
+
     </>
+
   );
+
 }
 
 export default Dashboard;

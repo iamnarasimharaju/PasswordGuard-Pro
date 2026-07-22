@@ -192,3 +192,363 @@
     font-size:18px;
 
 }
+
+/* ===================================
+SIDEBAR FOOTER
+=================================== */
+
+.sidebar-footer{
+
+    margin-top:auto;
+
+    padding:20px;
+
+    border-top:1px solid #2d3a52;
+
+    text-align:center;
+
+}
+
+.sidebar-footer p{
+
+    color:white;
+
+    font-weight:600;
+
+    margin-bottom:6px;
+
+}
+
+.sidebar-footer span{
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+    display:block;
+
+}
+
+.sidebar-footer small{
+
+    color:#64748b;
+
+    font-size:12px;
+
+}
+
+/* ==========================================================
+   LOGIN
+========================================================== */
+
+.login-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#0f172a;
+
+}
+
+.login-card{
+
+    width:420px;
+
+    background:#1b2435;
+
+    border:1px solid #2d3a52;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+}
+
+.login-card h1{
+
+    color:white;
+
+    margin:20px 0 10px;
+
+}
+
+.login-card p{
+
+    color:#94a3b8;
+
+    margin-bottom:30px;
+
+}
+
+.login-input{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-bottom:18px;
+
+    border-radius:12px;
+
+    border:1px solid #2d3a52;
+
+    background:#111827;
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+.login-input:focus{
+
+    outline:none;
+
+    border-color:#3b82f6;
+
+}
+
+.login-btn{
+
+    width:100%;
+
+}
+
+/* ==========================================================
+PROFILE
+========================================================== */
+
+.profile-container{
+
+    position:relative;
+
+}
+
+.profile-button{
+
+    border:none;
+
+    background:none;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+.profile-dropdown{
+
+    position:absolute;
+
+    right:0;
+
+    top:50px;
+
+    width:230px;
+
+    background:#1b2435;
+
+    border:1px solid #2d3a52;
+
+    border-radius:16px;
+
+    padding:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+    z-index:999;
+
+}
+
+.profile-dropdown h4{
+
+    color:white;
+
+    margin-bottom:6px;
+
+}
+
+.profile-dropdown p{
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+    margin-bottom:12px;
+
+}
+
+.profile-dropdown hr{
+
+    border:none;
+
+    border-top:1px solid #2d3a52;
+
+    margin:12px 0;
+
+}
+
+.logout-btn{
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:12px;
+
+    background:#dc2626;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.logout-btn:hover{
+
+    background:#b91c1c;
+
+}
+
+/* ==========================================================
+NOTIFICATIONS
+========================================================== */
+
+.notification-container{
+
+    position:relative;
+
+}
+
+.notification-badge{
+
+    position:absolute;
+
+    top:-4px;
+
+    right:-4px;
+
+    background:#ef4444;
+
+    color:white;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    font-size:11px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:700;
+
+}
+
+.notification-dropdown{
+
+    position:absolute;
+
+    right:0;
+
+    top:52px;
+
+    width:320px;
+
+    background:#1b2435;
+
+    border:1px solid #2d3a52;
+
+    border-radius:16px;
+
+    padding:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+    z-index:999;
+
+}
+
+.notification-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:15px;
+
+}
+
+.notification-header h4{
+
+    color:white;
+
+}
+
+.notification-header button{
+
+    border:none;
+
+    background:none;
+
+    color:#3b82f6;
+
+    cursor:pointer;
+
+}
+
+.notification-item{
+
+    padding:12px;
+
+    border-bottom:1px solid #2d3a52;
+
+}
+
+.notification-item strong{
+
+    color:white;
+
+}
+
+.notification-item p{
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+    margin-top:5px;
+
+}
+
+.notification-item.read{
+
+    opacity:.6;
+
+}

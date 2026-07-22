@@ -1,15 +1,36 @@
+import { useState } from "react";
+
+import BreachInput from "../components/breach/BreachInput";
+import BreachResult from "../components/breach/BreachResult";
+
+import { checkPassword } from "../services/breachService";
+
 function BreachChecker() {
+
+  const [result, setResult] = useState(null);
+
+  function handleCheck(password) {
+
+    const response = checkPassword(password);
+
+    setResult(response);
+
+  }
+
   return (
-    <div className="page-placeholder">
 
-      <h1>🔓 Breach Checker</h1>
+    <div>
 
-      <p>
-        This module is currently under development.
-      </p>
+      <BreachInput onCheck={handleCheck} />
+
+      <br />
+
+      <BreachResult result={result} />
 
     </div>
+
   );
+
 }
 
 export default BreachChecker;

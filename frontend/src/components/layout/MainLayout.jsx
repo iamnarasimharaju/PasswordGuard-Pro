@@ -7,6 +7,7 @@ import Dashboard from "../../pages/Dashboard";
 import PasswordAnalyzer from "../../pages/PasswordAnalyzer";
 import PasswordGenerator from "../../pages/PasswordGenerator";
 import PolicyChecker from "../../pages/PolicyChecker";
+import BreachChecker from "../../pages/BreachChecker";
 import Reports from "../../pages/Reports";
 import Settings from "../../pages/Settings";
 
@@ -31,6 +32,9 @@ function MainLayout() {
 
       case "audit":
         return "Password Audit";
+
+      case "breach":
+        return "Breach Checker";
 
       case "reports":
         return "Reports";
@@ -61,6 +65,9 @@ function MainLayout() {
       case "audit":
         return <PolicyChecker />;
 
+      case "breach":
+        return <BreachChecker />;
+
       case "reports":
         return <Reports />;
 
@@ -79,9 +86,9 @@ function MainLayout() {
     <div className="layout">
 
       <Sidebar
-    page={currentPage}
-    setPage={setCurrentPage}
-/>
+        page={currentPage}
+        setPage={setCurrentPage}
+      />
 
       <div className="content-area">
 

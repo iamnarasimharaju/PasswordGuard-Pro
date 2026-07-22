@@ -1,30 +1,71 @@
-:root {
-  /* Colors */
-  --bg-primary: #0b1220;
-  --bg-sidebar: #111827;
-  --bg-card: #1e293b;
+/* ==========================================================
+   DARK THEME (Default)
+========================================================== */
 
-  --primary: #2563eb;
-  --primary-hover: #1d4ed8;
+:root{
 
-  --success: #22c55e;
-  --warning: #f59e0b;
-  --danger: #ef4444;
+  --bg-primary:#0b1220;
+  --bg-sidebar:#111827;
+  --bg-card:#1e293b;
 
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
+  --primary:#2563eb;
+  --primary-hover:#1d4ed8;
 
-  --border-color: #334155;
+  --success:#22c55e;
+  --warning:#f59e0b;
+  --danger:#ef4444;
 
-  /* Sidebar */
-  --sidebar-width: 280px;
+  --text-primary:#f8fafc;
+  --text-secondary:#94a3b8;
 
-  /* Radius */
-  --radius: 12px;
+  --border-color:#334155;
 
-  /* Shadow */
-  --shadow: 0 8px 20px rgba(0,0,0,.25);
+  --sidebar-width:280px;
 
-  /* Transition */
-  --transition: all .3s ease;
+  --radius:12px;
+
+  --shadow:0 8px 20px rgba(0,0,0,.25);
+
+  --transition:all .3s ease;
+
+}
+
+/* ==========================================================
+   LIGHT THEME
+========================================================== */
+
+body[data-theme="light"]{
+
+  --bg-primary:#f1f5f9;
+  --bg-sidebar:#ffffff;
+  --bg-card:#ffffff;
+
+  --primary:#2563eb;
+  --primary-hover:#1d4ed8;
+
+  --success:#22c55e;
+  --warning:#f59e0b;
+  --danger:#ef4444;
+
+  --text-primary:#111827;
+  --text-secondary:#475569;
+
+  --border-color:#d1d5db;
+
+  --shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================================
+   GLOBAL
+========================================================== */
+
+body{
+
+  background:var(--bg-primary);
+
+  color:var(--text-primary);
+
+  transition:all .3s ease;
+
 }

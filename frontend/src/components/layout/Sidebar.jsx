@@ -3,6 +3,7 @@ import {
   ShieldCheck,
   KeyRound,
   FileSearch,
+  ShieldAlert,
   FileText,
   Settings,
 } from "lucide-react";
@@ -36,6 +37,12 @@ function Sidebar({ page, setPage }) {
     },
 
     {
+      id: "breach",
+      label: "Breach Checker",
+      icon: ShieldAlert,
+    },
+
+    {
       id: "reports",
       label: "Reports",
       icon: FileText,
@@ -48,6 +55,16 @@ function Sidebar({ page, setPage }) {
     },
 
   ];
+
+  <div className="sidebar-footer">
+
+  <p>PasswordGuard Pro</p>
+
+  <span>Version 1.0</span>
+
+  <small>© 2026 Narasimha Raju</small>
+
+</div>
 
   return (
 
