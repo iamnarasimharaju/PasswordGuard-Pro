@@ -1,94 +1,227 @@
 # 🔐 PasswordGuard Pro
 
-An Enterprise Password Security Suite built with React that helps users analyze, generate, and audit passwords using modern cybersecurity best practices.
+<div align="center">
+
+### Enterprise Password Security Suite
+
+A modern React-based cybersecurity application for password analysis, secure password generation, bulk password auditing, breach detection, and enterprise security reporting.
+
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![Vite](https://img.shields.io/badge/Vite-Latest-purple?logo=vite)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+</div>
 
 ---
 
-## ✨ Features
+# 📖 Overview
 
-### 📊 Enterprise Dashboard
-- Security overview
-- Password statistics
-- Risk summary
+PasswordGuard Pro is an enterprise-style password security application developed to help users evaluate password strength, generate secure passwords, perform bulk password audits, identify compromised passwords, and export professional security reports.
 
-### 🔍 Password Analyzer
-- Password strength scoring
-- Entropy calculation
-- GPU & CPU crack time estimation
-- Attack simulation
-- Security recommendations
-- OWASP & NIST password policy validation
-
-### 🔑 Password Generator
-- Generate cryptographically secure passwords
-- Custom password length
-- Uppercase, lowercase, numbers, and symbols
-- Exclude similar characters
-- Instant security analysis
-
-### 📋 Password Audit
-- Bulk password analysis
-- Duplicate password detection
-- Security score calculation
-- Entropy calculation
-- GPU crack time estimation
-- Search and sorting
-- Security summary dashboard
+The project demonstrates frontend development skills using React while incorporating cybersecurity concepts commonly used in Security Operations Centers (SOC), IAM, and enterprise security environments.
 
 ---
 
-## 🛠 Tech Stack
+# ✨ Features
 
-### Frontend
-- React
-- Vite
-- JavaScript (ES6)
-- CSS3
+## 🔐 Authentication
 
-### Libraries
-- React Router DOM
-- Lucide React
-- zxcvbn
+- Login
+- Logout
+- User Profile
+- Local Session Management
 
 ---
 
-## 📂 Project Structure
+## 📊 Dashboard
 
-```text
+- Security Metrics
+- Average Password Score
+- Password Entropy
+- Duplicate Password Detection
+- Risk Distribution
+- Recent Activity
+
+---
+
+## 🔍 Password Analyzer
+
+- Password Strength Analysis
+- Entropy Calculation
+- GPU Crack Time Estimation
+- Password Breakdown
+- Security Recommendations
+
+---
+
+## 🔑 Password Generator
+
+- Secure Password Generation
+- Configurable Length
+- Uppercase Characters
+- Lowercase Characters
+- Numbers
+- Special Symbols
+
+---
+
+## 🛡 Password Audit
+
+- Bulk Password Analysis
+- Duplicate Detection
+- Risk Classification
+- Search
+- Sorting
+
+---
+
+## 🚨 Password Breach Checker
+
+- Local Breach Database
+- Compromised Password Detection
+- Security Recommendations
+
+---
+
+## 📄 Reports
+
+- Executive Summary
+- CSV Export
+- PDF Export
+- Security Statistics
+
+---
+
+## ⚙ Settings
+
+- Application Preferences
+- Password Policy Configuration
+- Theme Framework
+
+---
+
+## 🔔 Notifications
+
+- Notification Center
+- Mark All Read
+- Profile Dropdown
+
+---
+
+# 🛠 Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Frontend | React.js |
+| Build Tool | Vite |
+| Language | JavaScript |
+| Styling | CSS3 |
+| State Management | React Context API |
+| Icons | Lucide React |
+| Charts | Recharts |
+| PDF | jsPDF |
+| CSV | Custom CSV Export |
+| Version Control | Git |
+| Repository | GitHub |
+
+---
+
+# 📂 Project Structure
+
+```
+PasswordGuard-Pro/
+
 frontend/
 │
 ├── src/
 │   ├── components/
-│   ├── context/
-│   ├── data/
-│   ├── engine/
-│   ├── hooks/
-│   ├── models/
 │   ├── pages/
-│   ├── routes/
+│   ├── context/
+│   ├── hooks/
 │   ├── services/
+│   ├── engine/
 │   ├── styles/
-│   └── utils/
+│   └── data/
+│
+├── public/
+│
+└── package.json
 ```
 
 ---
 
-## 🚀 Getting Started
+# 📸 Screenshots
 
-### Clone the repository
+## Login
+
+![Login](screenshots/login.png)
+
+---
+
+## Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+## Password Analyzer
+
+![Analyzer](screenshots/analyzer.png)
+
+---
+
+## Password Generator
+
+![Generator](screenshots/generator.png)
+
+---
+
+## Password Audit
+
+![Audit](screenshots/audit.png)
+
+---
+
+## Breach Checker
+
+![Breach](screenshots/breach-checker.png)
+
+---
+
+## Reports
+
+![Reports](screenshots/reports.png)
+
+---
+
+## Settings
+
+![Settings](screenshots/settings.png)
+
+---
+
+# 🚀 Installation
+
+Clone the repository
 
 ```bash
 git clone https://github.com/iamnarasimharaju/PasswordGuard-Pro.git
 ```
 
-### Install dependencies
+Go into the project
 
 ```bash
 cd PasswordGuard-Pro/frontend
+```
+
+Install dependencies
+
+```bash
 npm install
 ```
 
-### Start the development server
+Run the application
 
 ```bash
 npm run dev
@@ -96,54 +229,43 @@ npm run dev
 
 ---
 
-## 📌 Current Modules
+# 🎯 Future Enhancements
 
-| Module | Status |
-|---------|--------|
-| Dashboard | ✅ Completed |
-| Password Analyzer | ✅ Completed |
-| Password Generator | ✅ Completed |
-| Password Audit | ✅ Completed |
-| Reports | 🚧 In Progress |
-| Settings | 🚧 In Progress |
-
----
-
-## 🚀 Planned Features
-
-- PDF Report Export
-- CSV Report Export
-- Dashboard Analytics
-- Password Breach Checker
-- Authentication
-- Audit History
-- MongoDB Integration
-- Express.js Backend
-- JWT Authentication
-- Deployment
+- Backend Authentication
+- Cloud Password Breach API Integration
+- User Database
+- Password History
+- Scan History
+- Multi-user Support
+- Admin Dashboard
+- Email Alerts
+- Dark & Light Theme Improvements
+- Two-Factor Authentication
 
 ---
 
-## 📸 Screenshots
-
-Screenshots and demo GIFs will be added after the project reaches Version 1.0.
-
----
-
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **S B Narasimha Raju**
 
-GitHub: https://github.com/iamnarasimharaju
+MCA (Cyber Security)
+
+GitHub
+
+https://github.com/iamnarasimharaju
+
+LinkedIn
+
+(Add your LinkedIn profile here)
 
 ---
 
-## ⭐ Project Status
+# ⭐ Support
 
-**PasswordGuard Pro is currently under active development. New enterprise security features are being added continuously.**
+If you found this project useful, please consider giving it a ⭐ on GitHub.
 
 ---
 
-## 📄 License
+# 📄 License
 
 This project is licensed under the MIT License.
