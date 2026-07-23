@@ -256,7 +256,7 @@ https://github.com/iamnarasimharaju
 
 LinkedIn
 
-(Add your LinkedIn profile here)
+https://www.linkedin.com/in/iamnarasimharaju
 
 ---
 
